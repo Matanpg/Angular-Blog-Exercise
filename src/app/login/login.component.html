@@ -1,0 +1,15 @@
+<div class="container">
+  <form #aform="ngForm" (ngSubmit)="onSubmit(aform)">
+    <div>
+      <label for="userName">user name</label>
+      <input type="text" id="userName" required
+      [(ngModel)]="userName" name="userName">
+    </div>
+    <div>
+      <label for="password">password</label>
+      <input type="password" id="password" required
+      [(ngModel)]="password" name="password">
+    </div>
+    <button type="submit">submit</button>
+  </form>
+</div>

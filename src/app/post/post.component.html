@@ -1,0 +1,9 @@
+<h2>POSTS</h2>
+  <div *ngIf="post$ | async as post">
+    <h3>{{ post.title }}</h3>
+    <div>
+      <label></label>{{ post.content }}</div>
+    <p>
+      <button (click)="gotoPosts(post)">Back</button>
+    </p>
+  </div>
